@@ -70,7 +70,7 @@ In Gensyn Discord, go to #swarm-link
 
 Run ``` /link-telegram ```
 
-Copy your verification code
+Copy your verification code.
 
 In your Telegram bot, type:
 ```
