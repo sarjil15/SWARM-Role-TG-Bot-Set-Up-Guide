@@ -8,6 +8,7 @@
 
 ## 1️⃣ Install Gswarm
 
+## For Linux
 ```bash
 # Install Go:
 sudo rm -rf /usr/local/go
@@ -17,6 +18,13 @@ echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> $HOME/.bash_profile
 source .bash_profile
 go version
 ```
+
+## For macOS:
+```
+brew install go
+```
+
+## Now install Go
 ```
 go install github.com/Deep-Commit/gswarm/cmd/gswarm@latest
 ```
