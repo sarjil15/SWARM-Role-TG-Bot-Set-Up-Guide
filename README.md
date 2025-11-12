@@ -1,4 +1,4 @@
-# 🐝 SWARM Role & Telegram Bot Set-Up Guide 🐝
+<h1 align="center">🐜 <b>SWARM Role & Telegram Bot Set-Up Guide</b> 🐜</h1>
 
 - This guide explains how to install **Go**, set up a **Telegram bot**, and configure **GSwarm** to link your Gensyn node with Discord & Telegram.  
 
@@ -9,13 +9,19 @@
 ## 1️⃣ Install Gswarm
 
 ## For Linux
-```bash
-# Install Go:
+```
+cd ~
+wget https://go.dev/dl/go1.24.0.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go
-curl -L https://go.dev/dl/go1.22.4.linux-amd64.tar.gz | sudo tar -xzf - -C /usr/local
-echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bash_profile
-echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> $HOME/.bash_profile
-source .bash_profile
+sudo tar -C /usr/local -xzf go1.24.0.linux-amd64.tar.gz
+ 
+# Set environment variables
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+echo 'export GOPATH=$HOME/go' >> ~/.bashrc
+echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
+source ~/.bashrc
+ 
+# Verify Go installation
 go version
 ```
 
